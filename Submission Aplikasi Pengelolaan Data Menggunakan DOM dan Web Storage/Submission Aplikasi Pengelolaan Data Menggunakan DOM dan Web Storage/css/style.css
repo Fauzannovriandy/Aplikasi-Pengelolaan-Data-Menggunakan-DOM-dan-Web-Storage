@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    color: rgb(13, 47, 91);
+    font-family: 'Noto Sans', sans-serif;
+    background-color: #CED89E;
+    box-sizing: border-box;
+}
+
+header {
+    flex-direction: column;
+    text-align: center;
+    background: #ADCF9F;
+    padding: 16px;
+    color: rgb(13, 47, 91);
+    box-shadow: 0 9px 13px rgba(0, 0, 0, 0.5);
+}
+
+.wrapper {
+    display: flex;
+    margin-inline: auto;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+}
+
+.container,
+.container-form {
+    width: 800px;
+    border-radius: 25px;
+    margin: 15px;
+    background: #76BA99;
+    box-shadow: 0 9px 13px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    height: fit-content;
+}
+
+.item {
+    font-size: 20px;
+    border-radius: 20px;
+    margin-top: 10px;
+    padding: 7px 19px 7px 19px;
+    background: whitesmoke;
+    display: flex;
+    align-items: center;
+}
+
+.item > .inner h2 {
+    font-family: 'Noto Sans', sans-serif;
+    color: #3EC1D3;
+    font-size: 22px;
+    margin-bottom: unset;
+}
+
+.item > .inner p {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 15px;
+}
+
+.form {
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    border-radius: 16px;
+}
+
+.container-gruptitle {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-gruptitle label {
+    margin-bottom: 4px;
+    font-size: 20px;
+    font-weight: lighter;
+    height: fit-content;
+}
+
+input[type=text], input[type=date] {
+    font-family: 'Noto Sans', sans-serif;
+    background: whitesmoke;
+    border: 5px solid rgba(154, 160, 185, .05);
+    border-radius: 8px;
+    padding: 16px;
+    box-sizing: border-box;
+    margin-bottom: 8px;
+    font-size: 20px;
+}
+
+.btn-submit {
+    width: fit-content;
+    font-family: Raleway, sans-serif;
+    border-radius: 16px;
+    padding: 12px 24px;
+    border: 2px solid #3EC1D3;
+    color: black;
+    font-size: 20px;
+    margin-top: auto;
+    align-self: flex-end;
+    cursor: pointer;
+}
+
+.btn-submit:hover {
+    background: #20646d;
+    color: white;
+}
+
+input[type=text], input[type=date], .btn-submit:focus {
+    outline: none;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.container-gruptitle {
+    margin: auto 0;
+}
+
+.check-button {
+    background: url('../assets/bx-check-square.svg');
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    margin-left: auto;
+    cursor: pointer;
+    border: none;
+}
+
+.check-button:hover {
+    background: url('../assets/bx-check-square.svg');
+    background-size: contain;
+    background-color: grey;
+    cursor: pointer;
+    transition: 0.3s;
+    
+}
+
+.trash-button {
+    background: url('../assets/bxs-trash-alt.svg');
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    margin-left: 16px;
+    cursor: pointer;
+    border: none;
+}
+
+.trash-button:hover {
+    background: url('../assets/bxs-trash-alt.svg');
+    background-size: contain;
+    background-color: grey;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.undo-button {
+    background: url('../assets/bx-undo.svg');
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    margin-left: auto;
+    cursor: pointer;
+    border: none;
+}
+
+.undo-button:hover {
+    background: url('../assets/bx-undo.svg');
+    background-size: contain;
+    background-color: grey;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.check-button:focus, .trash-button {
+    outline: none;
+}
+
+.data-check {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+  
+.data-check label {
+    color: rgb(13, 47, 91);
+}
+  
+.data-check input,
+.data-check label {
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1024px) {
+    .wrapper {
+        margin: 0;
+    }
+
+    .wrapper .container {
+        width: 100%;
+    }
+
+    .list-item {
+        width: 90%;
+    }
+
+    .form {
+        width: 100%;
+    }
+}
